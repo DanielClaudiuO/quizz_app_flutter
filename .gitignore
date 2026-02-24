@@ -3,4 +3,7 @@
 
 # But not these files...
 !.gitignore
-!lib/*
+
+# Allow lib directory and everything inside it
+!lib/
+!lib/**
