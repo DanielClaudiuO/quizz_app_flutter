@@ -35,16 +35,16 @@ class ResultsScreen extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: EdgeInsets.all(40),
+        margin: EdgeInsets.all(30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "You answered $correctQuestionsCount out of $totalQuestionsCount questions correctly!",
               style: GoogleFonts.goldman(
-                color: Colors.black,
+                color: Colors.red,
                 fontSize: 20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w100,
               ),
             ),
             SizedBox(height: 30),
@@ -52,7 +52,7 @@ class ResultsScreen extends StatelessWidget {
             SizedBox(height: 30),
             TextButton.icon(
               onPressed: onRestart,
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
+              style: TextButton.styleFrom(foregroundColor: Colors.blueGrey),
               icon: Icon(Icons.refresh),
               label: Text("Restart Quiz"),
             ),
